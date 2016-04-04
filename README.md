@@ -6,17 +6,17 @@ A nginx reverse proxy based on docker.
 Description
 -----------
 
-Give a description
+A role to use nginx reverse proxy docker container for use for sub domains or domains of your site/app. You can learn more about the [container here][4].
 
 Role Variables
 --------------
 
-A description of the settable variables for this role should go here, including any variables that are in defaults/main.yml, vars/main.yml, and any variables that can/should be set via parameters to the role. Any variables that are read from other roles and/or the global scope (ie. hostvars, group vars, etc.) should be mentioned here as well.
+There is one variable that needs to be changed. That's the `user.name` variable. You can find this variable in **vars/main.yml**. Change the variable to the user that you want to manage the docker container through systemd.
 
 Requirements
 ------------
 
-A list of other roles hosted on Galaxy should go here, plus any details in regards to parameters that may need to be set for other roles, or variables that are used from other roles.
+Need to have docker already installed one way or another. You can use the handy dandy [docker role][3] I have for the task.
 
 Usage
 -----
@@ -26,7 +26,8 @@ Including an example of how to use your role (for instance, with variables passe
 ``` yaml
 - hosts: servers
     roles:
-        - { role: username.rolename, x: 42 }
+        - docker
+        - domain
 ```
 
 Author Information
