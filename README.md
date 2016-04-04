@@ -1,7 +1,9 @@
 Docker
 =========
-A nginx reverse proxy based on docker.
 [![license][2i]][2p]
+[![twitter][5i]][5p]
+
+A nginx reverse proxy based on docker.
 
 Description
 -----------
@@ -36,7 +38,9 @@ Author Information
 [Alejandro Baez][1]
 
 [1]: https://keybase.io/baez
-[2i]: https://img.shields.io/badge/license-BSD_2-blue.svg
+[2i]: https://img.shields.io/badge/license-BSD_2-green.svg
 [2p]: ./LICENSE
 [3]: https://galaxy.ansible.com/abaez/docker/
 [4]: https://hub.docker.com/r/jwilder/nginx-proxy/
+[5i]: https://img.shields.io/badge/twitter-a_baez-blue.svg
+[5p]: https://twitter.com/a_baez
