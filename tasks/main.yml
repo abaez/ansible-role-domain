@@ -1,2 +1,12 @@
 ---
-# tasks file for template
+- name: move unit file to place
+  template:
+    src="domains.j2"
+    dest="/usr/lib/systemd/system/domains.service"
+    owner="{{ user.name }}"
+
+- name: enable docker container
+  service:
+    name=domains
+    enabled=yes
+    state=reloaded

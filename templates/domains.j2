@@ -1,0 +1,19 @@
+[Unit]
+Description=domain proxy container
+Requires=docker.service
+After=docker.service
+
+[Service]
+User={{ user.name }}
+Restart=on-failure
+RestartSec=10
+ExecStartPre=-/usr/bin/docker kill domains
+ExecStartPre=-/usr/bin/docker rm domains
+ExecStart=/usr/bin/docker run \
+  -v  /var/run/docker.sock:/tmp/docker.sock:ro \
+  -p 80:80 \
+  --name=domains jwilder/nginx-proxy
+ExecStop=-/usr/bin/docker stop -t 2 domains
+
+[Install]
+WantedBy=multi-user.target
