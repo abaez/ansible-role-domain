@@ -1,7 +1,6 @@
-Role Name
+Docker
 =========
-
-A brief description of the role goes here.
+A nginx reverse proxy based on docker.
 [![license][2i]][2p]
 
 Description
@@ -38,3 +37,5 @@ Author Information
 [1]: https://keybase.io/baez
 [2i]: https://img.shields.io/badge/license-BSD_2-blue.svg
 [2p]: ./LICENSE
+[3]: https://galaxy.ansible.com/abaez/docker/
+[4]: https://hub.docker.com/r/jwilder/nginx-proxy/
