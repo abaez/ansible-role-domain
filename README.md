@@ -8,7 +8,7 @@ A nginx reverse proxy based on docker.
 Description
 -----------
 
-A role to use nginx reverse proxy docker container for use for sub domains or domains of your site/app. You can learn more about the [container here][4].
+A role to use nginx reverse proxy docker container for use for sub domains or domains of your site/app. You can learn more about the [container here][4]. The role provisions the docker container and applies a systemd service for the container to start on each reboot instance of the client.
 
 Role Variables
 --------------
@@ -23,7 +23,7 @@ Need to have docker already installed one way or another. You can use the handy 
 Usage
 -----
 
-Including an example of how to use your role (for instance, with variables passed in as parameters) is always nice for users too:
+To use is pretty straight forward. You simply call after a provisioning with docker.
 
 ``` yaml
 - hosts: servers
