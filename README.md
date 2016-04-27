@@ -13,7 +13,7 @@ A role to use nginx reverse proxy docker container for use for sub domains or do
 Role Variables
 --------------
 
-There is one variable that needs to be changed. That's the `user.name` variable. You can find this variable in **vars/main.yml**. Change the variable to the user that you want to manage the docker container through systemd.
+There is one variable that needs to be changed. That's the `user.name` variable. You can find this variable in **defaults/main.yml**. Change the variable to the user that you want to manage the docker container through systemd.
 
 Requirements
 ------------
