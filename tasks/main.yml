@@ -1,4 +1,11 @@
 ---
+- name: make systemd/system directory if nonexistent
+  file:
+    force=yes
+    recurse=yes
+    state=directory
+    path=/usr/lib/systemd/system
+
 - name: move unit file to place
   template:
     src="domains.j2"
